@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin: 0px auto;
+            padding: 0px 0px;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            width: 500px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            /* grid-template-rows: auto auto auto;*/
+            grid-gap: 0.5rem;
+            transform: rotate(45deg);
+        }
+
+        .box {
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
+
+        .img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('s.jpg');
+        }
+
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: wheat;
+            display: flex;
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
+            transition: 1s;
+        }
+
+        .text span {
+            transform: rotate(-45deg);
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .box:hover .text {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media screen and (max-width: 991px) {
+            .container {
+                width: 500px;
+                height: 500px;
+            }
+
+            .text span {
+                font-size: 30px;
+            }
+        }
+
+       /* @media screen and (max-width: 787px) {
+            .container {
+                width: 210px;
+                height: 210px;
+            }
+
+            .text span {
+                font-size: 15px;
+            }
+        }*/
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box one" id="box1"></div>
+        <div class="box two" id="box2"></div>
+        <div class="box three" id="box3">
+            <div class="img"></div>
+            <div class="text"> <span>This Is Great</span> </div>
+        </div>
+        <div class="box four" id="box4"></div>
+        <div class="box five" id="box5">
+            <div class="img"></div>
+            <div class="text"> <span>This Is Great</span> </div>
+        </div>
+        <div class="box six" id="box6">
+            <div class="img"></div>
+            <div class="text"> <span>This Is Great</span> </div>
+        </div>
+        <div class="box seven" id="box7">
+            <div class="img"></div>
+            <div class="text"> <span>This Is Great</span> </div>
+        </div>
+        <div class="box eight" id="box8">
+            <div class="img"></div>
+            <div class="text"> <span>This Is Great</span> </div>
+        </div>
+        <div class="box nine" id="box9"></div>
+    </div>
+</body>
+
+</html>

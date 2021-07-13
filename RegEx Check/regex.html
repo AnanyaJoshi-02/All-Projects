@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function fun() {
+            let x = document.getElementById("ex1").value;
+
+            let rex = new RegExp(x);
+
+            let y = document.getElementById("ex2").value;
+
+            alert(rex.test(y));
+        }
+
+    </script>
+</head>
+
+<body>
+    REGEX: <input type="text" id="ex1">
+    STRING: <input type="text" id="ex2">
+
+    <button onclick="fun()">CLICK HERE</button>
+</body>
+
+</html>
